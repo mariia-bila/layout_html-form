@@ -12,237 +12,190 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <fieldset class="block">
-      <legend>Personal information</legend>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="surname">Surname:</label>
-        <input
-          type="text"
-          name="surname"
-          id="surname"
-          required
-        >
-      </form>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          required
-        >
-      </form>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="age">How old are You?</label>
-        <input
-          type="number"
-          name="age"
-          id="age"
-          value="12"
-          min="1"
-          max="100"
-          step="1"
-        >
-      </form>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="dateOfBirth">Full date of birth:</label>
-        <input
-         type="date"
-         name="dateOfBirth"
-         id="dateOfBirth"
-        >
-      </form>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="termOfTheAgreement">I accept the term of the agreement</label>
-        <input
-          type="checkbox"
-          name="termOfTheAgreement"
-          id="termOfTheAgreement"
-          required
-        >
-      </form>
-    </fieldset>
-
-    <fieldset class="block">
-      <legend>Registration</legend>
-
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="email">E-mail:</label>
-        <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="email@example.com"
-        required
-      >
-      </form>
-
-      <form
-      onsubmit="onSubmit()"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
-      class="block__item"
-      >
-        <label for="password">Password:</label>
-        <input
-        type="password"
-        name="password"
-        id="password"
-        minlength="6"
-        maxlength="32"
-        required
-        >
-      </form>
-    </fieldset>
-
-    <fieldset class="block">
-      <legend>An interesting fact about you!</legend>
-
-      <div class="block__item">
-        Do you love cats?
-        <label for="loveCats">
+    <form onsubmit="onSubmit()"
+          action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+          method="POST"
+          class="welcome-form">
+      <fieldset class="welcome-form__item personal-info-block">
+        <legend>Personal information</legend>
+        <div class="personal-info-block__item">
+          <label for="surname">Surname:</label>
           <input
-            type="radio"
-            name="loveCats"
-            id="loveCats"
-            value="yes"
+            type="text"
+            name="surname"
+            id="surname"
+            required
+            autocomplete="off"
           >
-            Yes
-        </label>
-        <label for="dontLoveCats">
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="name">Name:</label>
           <input
-            type="radio"
-            name="love-cats"
-            id="dontLoveCats"
-            value="no"
+            type="text"
+            name="name"
+            id="name"
+            required
+            autocomplete="off"
           >
-            No
-        </label>
-      </div>
+        </div>
 
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="favoriteColor">What is your favorite color?</label>
-        <input
-          type="color"
-          name="favoriteColor"
-          id="favoriteColor"
-        >
-      </form>
+        <div class="personal-info-block__item">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            value="12"
+            min="1"
+            max="100"
+            step="1"
+          >
+        </div>
 
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="bedTime">What time do you go to bed?</label>
-        <input
-          type="time"
-          name="bedTime"
-          id="bedTime"
-        >
-      </form>
+        <div class="personal-info-block__item">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input
+            type="date"
+            name="dateOfBirth"
+            id="dateOfBirth"
+          >
+        </div>
 
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="favoriteBrandOfCars">What are your favorite brand o cars?</label>
-        <select
-          name="favoriteBrandOfCars"
-          id="favoriteBrandOfCars"
-          multiple
-        >
-          <option value="bmw">BMW</option>
-          <option value="audi">Audi</option>
-          <option value="lada">Lada</option>
-        </select>
-      </form>
+        <div class="personal-info-block__item">
+          <label for="termOfTheAgreement">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            name="termOfTheAgreement"
+            id="termOfTheAgreement"
+            required
+          >
+        </div>
 
-      <form
-        onsubmit="onSubmit()"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="POST"
-        class="block__item"
-      >
-        <label for="rateOfWork">How do you rate our work?</label>
-        <input
-          type="range"
-          name="rateOfWork"
-          id="rateOfWork"
-          value="0"
-        >
-      </form>
-    </fieldset>
+      </fieldset>
 
-    <fieldset class="block">
-      <legend>Additional info:</legend>
-      <label for="comments">Comments:</label>
-      <textarea
-        name="comments"
-        id="comments"
-        class="block__item"
-        cols="15"
-        ows="2"
-        autocomplete="off"
-      >
-      </textarea>
+      <fieldset class="welcome-form__item personal-info-block">
+        <legend>Registration</legend>
 
-      <div class="block__item">
-        <label for="recommendUs">Would you recommend us?</label>
+        <div class="personal-info-block__item">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
 
-        <select
-          name="recommendUs"
-          id="recommendUs"
-        >
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-        </select>
-      </div>
-    </fieldset>
+        <div class="personal-info-block__item">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="32"
+            required
+          >
+        </div>
+      </fieldset>
 
-    <button type="submit">Submit</button>
+      <fieldset class="welcome-form__item personal-info-block">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="personal-info-block__item">
+          Do you love cats?
+          <label for="loveCats">
+            <input
+              type="radio"
+              name="loveCats"
+              id="loveCats"
+              value="yes"
+            >
+              Yes
+          </label>
+          <label for="dontLoveCats">
+            <input
+              type="radio"
+              name="love-cats"
+              id="dontLoveCats"
+              value="no"
+            >
+              No
+          </label>
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="favoriteColor">What is your favorite color?</label>
+          <input
+              type="color"
+              name="favoriteColor"
+              id="favoriteColor"
+          >
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="bedTime">What time do you go to bed?</label>
+          <input
+              type="time"
+              name="bedTime"
+              id="bedTime"
+          >
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="favoriteBrandOfCars">What are your favorite brand o cars?</label>
+          <select
+            name="favoriteBrandOfCars"
+            id="favoriteBrandOfCars"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="rateOfWork">How do you rate our work?</label>
+          <input
+              type="range"
+              name="rateOfWork"
+              id="rateOfWork"
+              value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="welcome-form__item personal-info-block">
+        <legend>Additional info:</legend>
+        <div class="personal-info-block__item">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            class="block__item"
+            cols="15"
+            ows="2"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+
+        <div class="personal-info-block__item">
+          <label for="recommendUs">Would you recommend us?</label>
+
+          <select
+            name="recommendUs"
+            id="recommendUs"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

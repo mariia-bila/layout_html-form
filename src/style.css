@@ -1,7 +1,8 @@
-.block {
+.welcome-form__item {
   margin-bottom: 20px;
+  display: block;
 }
 
-.block__item:not(:last-child) {
+.personal-info-block__item:not(:last-child) {
   margin-bottom: 10px;
 }
