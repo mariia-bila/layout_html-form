@@ -12,7 +12,8 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form onsubmit="onSubmit()"
+    <form
+          onsubmit="onSubmit()"
           action="https://mate-academy-form-lesson.herokuapp.com/create-application"
           method="POST"
           class="welcome-form">
@@ -118,7 +119,7 @@
           <label for="dontLoveCats">
             <input
               type="radio"
-              name="love-cats"
+              name="loveCats"
               id="dontLoveCats"
               value="no"
             >
@@ -175,9 +176,8 @@
           <textarea
             name="comments"
             id="comments"
-            class="block__item"
             cols="15"
-            ows="2"
+            rows="2"
             autocomplete="off"
           >
           </textarea>
