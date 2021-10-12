@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,oBACE,kBAAmB,CACnB,aACF,CAEA,4CACE,kBACF","file":"style.5501c34d.css","sourceRoot":"../src","sourcesContent":[".welcome-form__item {\n  margin-bottom: 20px;\n  display: block;\n}\n\n.personal-info-block__item:not(:last-child) {\n  margin-bottom: 10px;\n}\n"]}
